@@ -1,3 +1,5 @@
+LOCAL_PATH := device/huawei/GRA-L09
+
 USE_CAMERA_STUB := true
 
 TARGET_NO_BOOTLOADER := true
@@ -41,4 +43,5 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/hisi_fb.1048577/leds/lcd_backlight0/brightness"
 TW_CUSTOM_BATTERY_PATH := "/sys/devices/platform/bq_bci_battery.1/power_supply/Battery"
 TW_MAX_BRIGHTNESS := 255
-TW_BOARD_CUSTOM_GRAPHICS := ../../../device/huawei/p8/graphics.c
+TW_THEME := portrait_hdpi
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/twrp.fstab
